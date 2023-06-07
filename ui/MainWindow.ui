@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QWidget" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Window</string>
+  </property>
+  <widget class="QPushButton" name="playButton">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>310</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">float:right;
+font: 16pt &quot;MS Shell Dlg 2&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+ -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+ padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(40, 162, 232, 1);
+text-shadow: #454545 0 0 2px;
+border-bottom: 4px solid rgba(0, 152, 224, 1);
+ color: white;
+font-family: 'Roboto Slab', serif;</string>
+   </property>
+   <property name="text">
+    <string>Играть</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rulesButton">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>400</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">float:right;
+font: 16pt &quot;MS Shell Dlg 2&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+ -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+ padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(40, 162, 232, 1);
+text-shadow: #454545 0 0 2px;
+border-bottom: 4px solid rgba(0, 152, 224, 1);
+ color: white;
+font-family: 'Roboto Slab', serif;</string>
+   </property>
+   <property name="text">
+    <string>Правила</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>rulesButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>slotShowRulesWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>516</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>playButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>slotShowLevelsWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot1()</slot>
+  <slot>slot2()</slot>
+  <slot>showRulesWindow()</slot>
+  <slot>slotShowRulesWindow()</slot>
+  <slot>slotShowLevelsWindow()</slot>
+ </slots>
+</ui>
